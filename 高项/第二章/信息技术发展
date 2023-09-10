@@ -1,0 +1,13 @@
+存储虚拟化是云存储的核心技术之一
+
+laaS向用户提供计算能力、存储空间等基础设施方面的服务
+
+OSI采用了分层的结构技术，物理层、网络层、传输层、会话层、表示层和应用层
+
+广域网协议主要包括：ppp点对点协议、ISDN综合业务数字网、xDSL 广域网协议主要包括：ppp点对点协议、ISDN综合业务数字网、xDSL、DDN数字专线、x.25、FR帧中断、ATM异步传输模式
+
+应用层协议：FTP、TFTP、HTTP、SMTP、DHCP、Telnet、DNS、SNMP
+传输层有两个协议层：TCP、UDP
+网络层协议：IP、ICMP、IGMP、ARP、RARP
+
+软件定义网络SDN：shi
