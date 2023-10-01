@@ -1,0 +1,18 @@
+｜读得懂的教科书和阅读材料
+｜问题驱动，用代码说话
+
+operating systems:three easy pieces csapp
+
+vim ,tmux,grep,gcc,binutils
+
+file a.out
+
+objdump -d a.out ｜less   ;转成汇编 将一个工具的输出给另一个工具作为输入
+gcc hello.c --static --verbose
+gdb a.out
+starti ;第一条指令执行
+
+
+怎样才能变强
+｜问正确的问题，用正确的方式找答案
+
