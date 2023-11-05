@@ -1,0 +1,28 @@
+#要以root身份运行这个脚本 [ 前后要有一个空格
+#-ne not equal 不等
+if [ "$UID" -ne "$ROOT_UID" ]
+then
+    echo "must be root to run this sh"
+    exit
+fi
+
+#测试是否给这个脚本传递有参数（非空）
+#$1有值为真
+if [ -n "$1" ]
+then
+    lines=$1
+else
+    lines=$LINES
+fi
+
+cd $LOG_DIR
+
+if [ pwd !="$LOG_DIR" ]
+then
+    echo "can't change &LOG_DIR"
+    exit
+fi
+
+#保留message文件中的最后那部分
+tail -$lines messages >mesg.tmp
+mv mesg.tmp messages
