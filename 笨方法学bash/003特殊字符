@@ -1,0 +1,20 @@
+#vim 下
+:!echo $PATH
+
+#-e exist
+if [ -e "filename" ];then
+    echo "file $filename exists"
+
+
+
+# ;;双分号 ，是case代码的结束符
+
+variable='abc'
+case "$variable" in
+abc)
+    echo "\$variable = abc";;
+xyz)
+    echo "\$variable = axyz";;
+esac
+
+

@@ -1,0 +1,19 @@
+#!bin/bash
+
+LOG_FILE=$PWD/task01.log
+touch $LOG_FILE
+
+date
+w
+uptime
+
+echo "" >>$LOG_FILE
+date >>$LOG_FILE
+w >> $LOG_FILE
+uptime >>$LOG_FILE
+
+#打印本年度第几天
+echo "date `date +%j`"
+
+#UNIX元年为止的秒数
+echo "date `date +%s`"
