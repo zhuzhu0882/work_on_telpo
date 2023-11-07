@@ -46,6 +46,28 @@ echo $script_name
 script_name=`basename -s .sh  $0`
 echo $script_name
 
+# ：冒号。命令执行成功，状态码为0 ，如果失败，状态码为1
+echo $?   #返回上一条执行命令的状态码
+
+while : ->while true
+if condition
+then :
+else
+    take-some-action
+file
+
+: >test.txt.  #清空文件，但不会改变文件权限
+
+！取反操作符
+#反转命令退出状态码
+#反转测试操作符的意义
+
+! true #注意空格
+
+#定义退出状态码
+exit 88 ->0-255
+echo $?  ->88
+
 
 
 
