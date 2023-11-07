@@ -17,4 +17,23 @@ xyz)
     echo "\$variable = axyz";;
 esac
 
+#引号 双引号：会发生变量替换 单引号：不会发生变量替换
+#echo $PWD
+/root
+
+#echo "$PWD"
+/root
+#echo '$PWD'
+$PWD
+
+echo $HELLO. -> echo $[HELLO]
+
+#逗号操作符
+#用于连接多个算术操作，并返回最后一项
+let "t1 = ((a = 9,15 / 3))"
+echo "t1 = $t1".  ->t1=5
+
+
+
+
 
