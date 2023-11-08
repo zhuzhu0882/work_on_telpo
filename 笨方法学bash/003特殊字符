@@ -26,7 +26,7 @@ esac
 #echo '$PWD'
 $PWD
 
-echo $HELLO. -> echo $[HELLO]
+echo $HELLO. -> echo ${HELLO}
 
 #逗号操作符
 #用于连接多个算术操作，并返回最后一项
@@ -68,11 +68,68 @@ file
 exit 88 ->0-255
 echo $?  ->88
 
+*星号 
+#文件通配符
+ls -l *
+#正则表达式
+1133*  #一个或多个3
+#乘法
+
+？问号
+#文件名通配符
+ls -l t*.sh
+#正则表达式
+#测试操作符
+
+(())双圆括号
+#与let命令相似，允许算术拓展和赋值
+a=$(( 5 + 3))
+(( a++))
+
+((val0 = val1<98?8:23))
+if [ "$val1" -lt 98 ]
+then    
+    val0=8
+else     
+    val0=23
+fi
+
+${parameter?err_msg} #变量未声明，则打印
+${parameter:?err_msg} #变量声明了，但未赋值
+
+$美元
+#$变量替换
+引用变量的值就叫做变量替换
+在以下情况下，变量名没有前缀名$
+1、变量被声明或被赋值
+val=23
+echo val
+
+2、变量被unset
+3、变量被export
+4、变量代表一种信号
+
+#在引用时，$的变化
+1、双引号，弱引用，发生变量替换
+2、单引号，强引用，保持字面意思
+
+#$正则表达式中行结束符
+"abc$" 匹配行尾abc
+"^$" 匹配空行
+
+#${}参数替换
+${parameter-default}  #如果没声明或赋值，就替换为默认值
+${parameter：-default}
+
+echo ${username-`whoami`}
+DEFAULT_NAME=generic.data
+filename=${1:-$DEFAULT_NAME}. #如果$1没值，则赋值
 
 
 
-
-
-
+#$' ... '引用字符串扩展
+#$*,$@ 位置参数
+#$? 退出状态码变量
+#$$ 进程ID变量
 
 
