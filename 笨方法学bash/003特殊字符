@@ -132,4 +132,45 @@ filename=${1:-$DEFAULT_NAME}. #如果$1没值，则赋值
 #$? 退出状态码变量
 #$$ 进程ID变量
 
+（）圆括号
+#命令组
+#子 局部
+a=123
+$ (echo "a=$a";a=321;echo "a=$a")
+a=123
+a=321
+
+$ echo "a=$a"
+a=123
+
+#数组初始化
+
+{}大括号
+#扩展
+cat {file1,file2,file3} >comblined_file
+
+#代码块
+{
+echo 
+echo
+} >"$1.text"
+
+if [ -z "$1" ]
+then
+   echo "uage :`basename $0` rpm-file"
+   exit $E_NO
+fi
+
+#路径名 {}\;
+find . -name "*.txt" -exec cp {} /tmp \;
+
+>  &>  >&  >>  <  <>
+#重定向。 1标准输出。2标准错误输出
+>>追加输出
+&> 重定向标准输出和标准错误输出
+2>&1 标准错误输出重定向到标准输出
+1>&2 将输出重定向到标准错误输出
+
+#进程tihuan
+#比较操作符
 
