@@ -174,3 +174,44 @@ find . -name "*.txt" -exec cp {} /tmp \;
 #进程tihuan
 #比较操作符
 
+#vim比较两个文件
+vim -d a.txt b.txt
+
+[] 中括号
+#条件测试
+if[ 0 ]
+then 
+    echo "0 is true"
+
+#扩展测试
+file =/etc/passwd
+if [[ -e $file]]. #判断文件是否在
+then 
+    echo "passwd file exits"
+#数组元素
+Array[1]=slot_1
+echo ${Array[1]}
+
+#字符范围
+[xyz]
+[c-n]
+
+竖线与&
+｜ 管道
+cat *.list |sort |uniq
+||或
+#任意一边为true则真
+if[ $count1 ] || [ $count2 ]
+if[ $count1 -o $count2 ]
+if[[ $count1  ||  $count2 ]]
+
+ps aux
+for i in 1 2 3 4 5 6
+do
+   echo -n $1
+done & #后台执行这个循环
+
+#两边为true则真
+if[ $count1 ] && [ $count2 ]
+if[ $count1 -a $count2 ]
+if[[ $count1  &&  $count2 ]]
