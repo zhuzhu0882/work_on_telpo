@@ -215,3 +215,42 @@ done & #后台执行这个循环
 if[ $count1 ] && [ $count2 ]
 if[ $count1 -a $count2 ]
 if[[ $count1  &&  $count2 ]]
+
+- 连字符。破折号。 减号
+#选项、前缀
+ls -al
+
+#重定向stdin或stdout
+echo "whatever" |cat -
+file -
+#*不包含隐藏文件
+cp -a /source/direct/* /source/direct/.[^.] /dest/direct
+#备份嵌入当前时间
+backup-$(date +%Y-%m-%d)
+#先前的工作目录
+cd -
+#减号
+
++加号
+#算术
+#正则表达式
+echo allb |grep 'a1\+b'
+#选项
+set -u
+
+%百分号
+#取模
+expr 5 %3
+#模式匹配
+echo ${var%Pattern}
+
+~波浪号
+～家
+～+ 相当于$PWD
+
+^脱字号
+#行首
+#大写转换
+echo ${var^} #行首大写
+echo ${var^^} #所有大写
+#控制字符
