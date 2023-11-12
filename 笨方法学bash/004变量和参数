@@ -2,3 +2,29 @@
 #变量替换
 echo $var. #变量名替换成变量的值
 
+变量赋值
+#使用= 、let 、for 、 read
+#使用命令替换 ·command·
+
+let a=1+2
+
+echo -n "123:"  #不重起一行
+for a in 7 8 9 0
+do
+  ...
+done
+
+read a
+
+d=`ls -al`. #结果赋值
+
+!vim.  #最后一次vim历史
+
+#局部变量
+
+#环境变量
+1、环境变量将影响用户接口和shell行为
+2、需要将变量export，才能成为环境变量
+3、添加新的或者更现有环境变量，会立即生效
+子进程时不能通过export变量来影响产生自己父进程
+export VIL="Log fdm"
