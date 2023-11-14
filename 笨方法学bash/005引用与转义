@@ -17,3 +17,40 @@ echo -e "\v\v\v\v"  #打印4个水平制表符
 
 #ASCII字符
 quote=$'\042'
+
+#管道
+true | false
+1
+
+#管道的退出状态看最后
+
+#条件判断
+#条件测试结构
+if/then
+
+if   fi
+if  else  fi
+if  elif  else  fi
+#if/then结构判断依据是退出状态码是否为0，通常是最后命令的退出状态
+if [ -z “$1” ]. #左边的[是一个命令，]是参数
+if [[ $condition1 || $condition2 ]]
+
+if test condition-true  -> if [ condition-true ]
+
+#命令test支持的类型
+1、数值比较
+2、字符串比较
+3、文件比较
+
+date >test1.txt
+date >test2.txt
+if cmp test1.txt est2.txt &> /dev/null. #抑制输出
+
+
+
+
+
+
+
+
+
