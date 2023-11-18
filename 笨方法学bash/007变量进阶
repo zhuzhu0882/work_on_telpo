@@ -1,0 +1,12 @@
+for n in 1 2 3 4
+do
+    echo "BASH V[$n]"
+done
+
+xyz()
+{
+
+    echo "$FUNCNAME bow"
+}
+xyz
+echo "FUNC = ""$FUNCNAME"
