@@ -1,4 +1,4 @@
-for n in 1 2 3 4
+for n in 1 2 3 4。 #11赋值给n
 do
     echo "BASH V[$n]"
 done
@@ -10,3 +10,9 @@ xyz()
 }
 xyz
 echo "FUNC = ""$FUNCNAME"
+
+$LINENO 自身在脚本中的行数
+$OLDPWD 上一次工作路径
+$PATCH  可执行文件搜索路径
+
+PATH=$(PATH):/opt/bin
