@@ -1,0 +1,13 @@
+#set命令
+#使用一个命令的结果set `command`来重新设置脚本的位置参数
+
+$#.  命令行参数的个数
+$*  所有的位置参数都被看作为一个单词
+$@.  与$*相同，但是每个参数都是一个独立的引用字符串
+
+index=1
+for arg in "$@"
+do
+    echo "arg #$index = $arg"
+    let "index+=1"
+done

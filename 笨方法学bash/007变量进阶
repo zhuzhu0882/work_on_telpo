@@ -16,3 +16,5 @@ $OLDPWD 上一次工作路径
 $PATCH  可执行文件搜索路径
 
 PATH=$(PATH):/opt/bin
+
+echo -e "-a"
