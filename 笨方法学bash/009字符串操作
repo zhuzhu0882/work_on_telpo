@@ -1,0 +1,27 @@
+字符串操作
+#字符串长度
+$(#string)
+expr length $string
+
+while read line
+do
+    echo "$line"
+    len=$(#line)
+done
+#索引
+expr index "$string" '$characters'
+
+str=abc123
+echo `expr index "$str" 'abc'`
+#提取子串
+提取指定位置和长度字符
+expr substr $string $position $length. 起始位置1
+
+提取符合条件字符
+从头开始提取
+expr match "$string" '\(REGEXP\)'
+str=abcABC123
+expr match "$str" '\(REGEX.[b-c]*[A-Z]..[0-9]\)' #abcABC1
+#子串删除
+#子串替换
+#awk处理字符串
