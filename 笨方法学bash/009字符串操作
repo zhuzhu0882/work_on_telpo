@@ -23,5 +23,26 @@ expr match "$string" '\(REGEXP\)'
 str=abcABC123
 expr match "$str" '\(REGEX.[b-c]*[A-Z]..[0-9]\)' #abcABC1
 #子串删除
+#从头开始删除
+$(string#substring). 最短匹配
+$(string##substring). 最长匹配
+
+str=abcABC123ABCabc.   
+$(str#a*C)    #123ABCabc
+$(str##a*C)   #abc
+
+
+从末尾开始删除
+$(string%substring). 最短匹配
+$(string%%substring). 最长匹配
 #子串替换
-#awk处理字符串
+#awk处理字符串.  awk是一种编程语言，对文本和数据进行处理
+#字符串函数
+sub()
+gsub()
+index(string,substring)
+length(string)
+substr()
+match()
+toupper()
+split()
