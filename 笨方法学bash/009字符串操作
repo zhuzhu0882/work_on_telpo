@@ -46,3 +46,22 @@ substr()
 match()
 toupper()
 split()
+
+#变量的处理和扩展
+${parameter}
+${parameter-default} #如果没有声明，使用默认值。不会修改变量的值
+${parameter=default}。#修改变量的值
+
+${parameter+alt_default}。 定义就赋值
+${parameter?err_msg}.  如果没有定义，报错
+
+长度/子串删除
+$(#var)
+计算字符串、位置参数和数组的长度
+
+${#array}.  表示第一个元素的长度
+${#array[*]}和${#array[@]}。  表示数组中元素的个数
+
+${var#pattern}.  ${var##pattern}.  从变量$var的开头，删除最短或最长匹配$pattern的子串
+
+${var:pos:len}. 变量var从位置pos开始，提取len长度
