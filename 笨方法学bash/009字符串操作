@@ -65,3 +65,15 @@ ${#array[*]}和${#array[@]}。  表示数组中元素的个数
 ${var#pattern}.  ${var##pattern}.  从变量$var的开头，删除最短或最长匹配$pattern的子串
 
 ${var:pos:len}. 变量var从位置pos开始，提取len长度
+
+#特殊的变量类型
+declare/typeset
+-i. 整型
+-r.  只读
+-a.  数组
+-f. 函数
+-x。 导出
+
+限制局部变量
+
+#局部变量
