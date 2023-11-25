@@ -1,0 +1,19 @@
+#for循环
+for arg in [list]
+do
+    command(s)
+done
+
+#在循环的每次执行中，[list]中的值按顺序赋值给变量arg
+for fruit in "Apple 1" "Brange 2"
+do
+    set - $fruit.  #分割
+    echo "$1:$2 kg"
+done
+
+ls -l $strfile | awk '{print $9 ":size:" $5}'
+
+for file in [ct]*.    #c或t开头的
+do
+    :
+done
