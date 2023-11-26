@@ -17,3 +17,5 @@ for file in [ct]*.    #c或t开头的
 do
     :
 done
+
+done ｜sort >>file.txt重新排序，重定向到文件
