@@ -19,3 +19,26 @@ do
 done
 
 done ｜sort >>file.txt重新排序，重定向到文件
+
+while循环
+while [condition]
+do  
+    command
+done
+
+while [[ command ]]
+
+C风格
+{{ a = 1 }}
+{{ LIMIT = 100}}
+while {{ a <=LIMIT }}
+do
+    {{ a += 1}}
+done
+
+while和read结合
+cat /etc/hosts |
+while read line1
+do  
+    echo "$line1"
+done
