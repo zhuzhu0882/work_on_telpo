@@ -42,3 +42,19 @@ while read line1
 do  
     echo "$line1"
 done
+
+until. 和while相反
+END_CONDITION=end
+until [ "val1" = "$END_CONDITION" ]
+do
+    read var1
+    echo "$var1"
+done
+
+循环控制
+break.  跳出循环
+continue. 忽略本次循环的剩余代码，跳到循环头部
+#break和continue均可通过参数指定级别
+break 2. 跳出2层嵌套
+continue 2. 跳2级
+
