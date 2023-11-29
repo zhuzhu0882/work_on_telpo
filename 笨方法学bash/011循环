@@ -58,3 +58,19 @@ continue. 忽略本次循环的剩余代码，跳到循环头部
 break 2. 跳出2层嵌套
 continue 2. 跳2级
 
+
+read Keypress
+case "$Keypress" in
+    [0-9] ) echo "0-9";;
+    * ) echo "all";;
+esac
+
+$#. 所有参数
+shift   检查剩余参数
+
+select variable [in list].  等待用户选择
+do
+    commands
+    break
+done
+
