@@ -74,3 +74,7 @@ do
     break
 done
 
+命令替换
+s_name=`basename $0`
+
+
