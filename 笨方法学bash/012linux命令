@@ -1,0 +1,26 @@
+#!bin/bash
+
+#I/O命令
+
+echo -e #可以打印转义字符
+echo -n #阻止新起一行
+
+printf. #格式化输出
+
+read
+-r   #取消转义字符
+-n    #限制接受字符的个数
+-p   #提示符
+-t   #限制读取的等待时间
+
+#文件系统命令
+dirs 、pushd、 popd
+dirs  #显示当前目录栈中的所有记录
+pushd  #压栈
+popd  #删栈
+
+
+pushd /tmp
+dirs -v
+pushd +2
+popd +2
