@@ -24,3 +24,12 @@ pushd /tmp
 dirs -v
 pushd +2
 popd +2
+
+let
+eval
+set
+unset
+export
+declare,typeset
+readonly
+
